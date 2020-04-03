@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/main/main",
+    "pages/find/find",
+    "pages/dingzhi/dingzhi",
+    "pages/mudi/mudi",
+    "pages/me/me"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar":{
+    "color": "#666666",
+    "selectedColor": "#445356",
+    "list":[
+      {
+        "pagePath":"pages/main/main",
+        "text":"首页",
+        "iconPath":"images/n-1-a.png",
+        "selectedIconPath":"images/n-1.png"
+      },
+      {
+        "pagePath":"pages/find/find",
+        "text":"发现",
+        "iconPath":"images/n-2-a.png",
+        "selectedIconPath":"images/n-2.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

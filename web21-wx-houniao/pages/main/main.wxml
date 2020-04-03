@@ -1,0 +1,18 @@
+<view>
+  <view>推荐</view>
+  <view class="list">
+    <view class="item" wx:for="{{tuijianArr}}" wx:key="index">
+      <view class="item_img"> <image src="{{item.proPicUrl}}" ></image></view>
+      <view class="item_text">
+        <view>{{item.proTitle}}</view>
+        <view>{{item.country}}</view>
+        <view>
+          <text>{{routingDat}}天{{routingNigth}}晚</text>
+          <text>{{amount}}元起</text>
+        </view>
+      </view>
+    </view>
+  
+  </view>
+
+</view>
