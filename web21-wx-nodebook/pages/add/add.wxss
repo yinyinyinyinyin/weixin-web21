@@ -1,0 +1,5 @@
+/* pages/add/add.wxss */
+page{height:100%;}
+.page{display: flex; flex-direction: column; height:100%;}
+.page-t{width: 100%; height: 90%;}
+.btns{width: 100%; height: 10%; display: flex; flex:1; align-items:center; justify-content: space-around; background: lightgreen;}

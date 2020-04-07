@@ -1,0 +1,16 @@
+<view class="list">
+  <block wx:if="{{listArr.length}}">
+    <view wx:for="{{listArr}}" class="list-item" wx:key="id">
+      <view class="list-con">{{item.content}}</view>
+      <view class="list-time">创建时间：{{item.time}}</view>
+    </view>
+  </block>
+  <view wx:else>记事本很纯洁，需要你点击添加按钮！</view>  
+</view>
+<!--<view bindtap="toLog">跳转到日志页</view>
+<view bindtap="toIndex">跳转到的页面没有返回按钮</view>-->
+
+<view class="add" bindtap="add">
+  <image src="../../images/edit.gif"></image>
+</view>
+

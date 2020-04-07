@@ -1,0 +1,17 @@
+/* pages/list/list.wxss */
+
+.list-item{
+  border-bottom:1px dotted lightgreen;
+  border-top:1px dotted lightgreen;
+  margin-top:10px;
+  background: lightyellow;
+}
+.list-con{
+  padding:5px;
+  border-bottom:green 1px solid;
+}
+.list-time{
+  padding:5px;
+}
+.add{position: fixed; bottom:40rpx; right:40rpx; width:100rpx; height:100rpx; border:1px solid green; border-radius: 50%; line-height: 100rpx; text-align:center;}
+.add image{width: 70%; height: 70%;margin-top:16rpx;}

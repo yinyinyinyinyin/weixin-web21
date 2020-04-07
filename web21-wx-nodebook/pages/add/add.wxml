@@ -1,0 +1,11 @@
+<!--pages/add/add.wxml-->
+<view class="page">
+  <view class="page-t">
+    <input type="text" placeholder="请输入日志内容" bindinput="saveText" />
+    {{content}}
+  </view>
+  <view class="btns">
+    <view class="cancel" bindtap="cancelFun">取消</view>
+    <view class="sure" bindtap="sureFun">确定</view>
+  </view>
+</view>
