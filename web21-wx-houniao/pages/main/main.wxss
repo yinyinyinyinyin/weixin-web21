@@ -1,1 +1,4 @@
 /* pages/main/main.wxss */
+@import "/templates/mainswiper/mainswiper.wxss";
+
+

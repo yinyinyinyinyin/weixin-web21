@@ -4,7 +4,8 @@
     "pages/find/find",
     "pages/dingzhi/dingzhi",
     "pages/mudi/mudi",
-    "pages/me/me"
+    "pages/me/me",
+    "templates/mainswiper/mainswiper"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -12,21 +13,39 @@
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
   },
-  "tabBar":{
+  "tabBar": {
     "color": "#666666",
     "selectedColor": "#445356",
-    "list":[
+    "list": [
       {
-        "pagePath":"pages/main/main",
-        "text":"首页",
-        "iconPath":"images/n-1-a.png",
-        "selectedIconPath":"images/n-1.png"
+        "pagePath": "pages/main/main",
+        "text": "首页",
+        "iconPath": "images/n-1-a.png",
+        "selectedIconPath": "images/n-1.png"
       },
       {
-        "pagePath":"pages/find/find",
-        "text":"发现",
-        "iconPath":"images/n-2-a.png",
-        "selectedIconPath":"images/n-2.png"
+        "pagePath": "pages/find/find",
+        "text": "发现",
+        "iconPath": "images/n-2-a.png",
+        "selectedIconPath": "images/n-2.png"
+      },
+      {
+        "pagePath": "pages/dingzhi/dingzhi",
+        "text": "定制行",
+        "iconPath": "images/n-3.png",
+        "selectedIconPath": "images/n-3.png"
+      },
+      {
+        "pagePath": "pages/mudi/mudi",
+        "text": "目的地",
+        "iconPath": "images/n-4-a.png",
+        "selectedIconPath": "images/n-4.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我",
+        "iconPath": "images/n-5-a.png",
+        "selectedIconPath": "images/n-5.png"
       }
     ]
   },

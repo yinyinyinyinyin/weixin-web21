@@ -1,0 +1,15 @@
+<!--templates/mainswiper/mainswiper.wxml-->
+<text>templates/mainswiper/mainswiper.wxml</text>
+<template name="mainswiper">
+  
+ <swiper indicator-dots="{{true}}"
+    autoplay="{{true}}" interval="{{2000}}" duration="{{500}}"  class="mainswiper">
+    <block wx:for="{{lunboArr}}" wx:key="index">
+      <swiper-item>
+        <view class="swiper-item ">
+          <image src="{{item.photoUrl}}"></image>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+</template>

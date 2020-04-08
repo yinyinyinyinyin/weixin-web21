@@ -1,0 +1,26 @@
+/* templates/mainswiper/mainswiper.wxss */
+.mainswiper{height:375rpx;}
+.swiper-item{height:375rpx;}
+.swiper-item image{ width:100%;height:375rpx;}
+.mainswiper .wx-swiper-dots.wx-swiper-dots-horizontal{
+  margin-bottom: 2rpx;
+}
+.mainswiper .wx-swiper-dot{
+ width:20rpx;
+ display: inline-flex;
+ height: 20rpx;
+ margin-left: 20rpx;
+ justify-content:space-between;
+}
+.mainswiper .wx-swiper-dot::before{
+ content: '';
+ flex-grow: 1; 
+ background: rgba(255,255,255,0.8);
+ border-radius: 8rpx;
+}
+.mainswiper .wx-swiper-dot-active::before{
+ background:#4eddf9;  
+}
+.mainswiper .wx-swiper-dot-active{
+  width:30rpx;
+ }

@@ -1,5 +1,9 @@
+<import src="/templates/mainswiper/mainswiper"  />
 <view>
+
+<template is="mainswiper" data="{{lunboArr}}"></template>
   <view>推荐</view>
+  <text class='iconfont icon-diliweizhi'></text>
   <view class="list">
     <view class="item" wx:for="{{tuijianArr}}" wx:key="index">
       <view class="item_img"> <image src="{{item.proPicUrl}}" ></image></view>
