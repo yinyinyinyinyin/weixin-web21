@@ -62,59 +62,18 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    //设置添加数据的id
-    this.setData({
-      id:new Date().getTime()  //将日期时间对象转时间戳
-    })
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+    console.log(options);
+    //如果能接受到 id就是修改操作，如果没有接收到id就是添加操作
+    const id = options.id;
+    if(id){//修改
+      //获取到修改的内容
+      getValue(this,id);
+    }else{//添加
+       //设置添加数据的id
+      this.setData({
+        id:new Date().getTime()  //将日期时间对象转时间戳
+      })
+    }
   }
 })
 
@@ -128,14 +87,35 @@ function setValue(page){
   let flag = true;//true 添加  false 修改 
   if(arr.length){//有数据
     arr.forEach((item)=>{
+      if(item.id == page.data.id){//找到了要修改的记录
+        item.time = util.formatTime(new Date());
+        item.content = page.data.content;
+        //状态
+        flag = false;
+      }
       data.push(item);
     })
   }
-
   if(flag){
     data.push(page.data);
   }
-
   //存缓存
   wx.setStorageSync('note', data);
+}
+
+//获取到要修改的内容
+function getValue(page,id){
+  //console.log(id);
+  var arr = wx.getStorageSync('note');
+  if(arr.length){
+    arr.forEach(item=>{
+      if(item.id == id){
+       // console.log(109);
+        page.setData({
+          id:item.id,
+          content:item.content
+        })
+      }
+    })
+  }
 }

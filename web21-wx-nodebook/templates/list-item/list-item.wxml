@@ -1,0 +1,8 @@
+
+<!--1.定义模板-->
+<template name="tem-list-item">
+<view class="list-con">{{item.content}}</view>
+  <view class="list-time">创建时间：{{item.time}}</view>
+  <button type="primary" size="mini" class="edit" bindtap="edit" data-id="{{item.id}}">修改</button>
+  <button type="primary" size="mini" class="del" bindtap="del" data-id="{{item.id}}">删除</button>
+</template>

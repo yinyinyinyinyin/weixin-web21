@@ -1,7 +1,7 @@
 <!--pages/add/add.wxml-->
 <view class="page">
   <view class="page-t">
-    <input type="text" placeholder="请输入日志内容" bindinput="saveText" />
+    <input type="text" placeholder="请输入日志内容" bindinput="saveText" value="{{content}}"/>
     {{content}}
   </view>
   <view class="btns">

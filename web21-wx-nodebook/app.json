@@ -1,11 +1,10 @@
-
 {
   "pages": [
-   
     "pages/list/list",
     "pages/add/add",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/templates/list-item/list-item"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -13,15 +12,15 @@
     "navigationBarTitleText": "纯洁的记事本",
     "navigationBarTextStyle": "black"
   },
-  "tabBar":{
-    "list":[
+  "tabBar": {
+    "list": [
       {
-        "pagePath":"pages/list/list",
-        "text":"首页"
+        "pagePath": "pages/list/list",
+        "text": "首页"
       },
       {
-        "pagePath":"pages/logs/logs",
-        "text":"日志"
+        "pagePath": "pages/logs/logs",
+        "text": "日志"
       }
     ]
   },

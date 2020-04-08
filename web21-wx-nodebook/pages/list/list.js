@@ -41,6 +41,15 @@ Page({
     })
     
   },
+  //修改函数
+  /*点击修改函数时，需要带该条记录的id号，跳转到add.js 传参
+  */
+  edit:function(ev){
+    const id = ev.currentTarget.dataset.id;
+    wx.navigateTo({
+      url: '../add/add?id='+id,  //将参数传递给 add页面
+    })
+  },
   toLog:function(){
     //switchTab就可以跳转到tabBar的页面
     wx.switchTab({
