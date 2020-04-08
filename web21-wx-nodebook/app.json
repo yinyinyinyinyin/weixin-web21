@@ -4,7 +4,7 @@
     "pages/add/add",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/templates/list-item/list-item"
+    "pages/test/test"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -17,10 +17,12 @@
       {
         "pagePath": "pages/list/list",
         "text": "首页"
-      },
-      {
+      },{
         "pagePath": "pages/logs/logs",
         "text": "日志"
+      },{
+        "pagePath": "pages/test/test",
+        "text": "引入组件"
       }
     ]
   },

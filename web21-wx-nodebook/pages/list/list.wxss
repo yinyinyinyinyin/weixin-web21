@@ -1,5 +1,6 @@
 /* pages/list/list.wxss */
-
+/*引入模板的样式*/
+@import "../../templates/list-item/list-item.wxss";
 .list-item{
   border-bottom:1px dotted lightgreen;
   border-top:1px dotted lightgreen;
@@ -7,13 +8,7 @@
   background: lightyellow;
   position: relative;
 }
-.list-con{
-  padding:5px;
-  border-bottom:green 1px solid;
-}
-.list-time{
-  padding:5px;
-}
+
 .add{position: fixed; bottom:40rpx; right:40rpx; width:100rpx; height:100rpx; border:1px solid green; border-radius: 50%; line-height: 100rpx; text-align:center;}
 .add image{width: 70%; height: 70%;margin-top:16rpx;}
 .edit{position: absolute; top:0px; right:10px; height:56rpx;line-height:56rpx;}

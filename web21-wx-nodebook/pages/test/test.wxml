@@ -1,0 +1,12 @@
+<!--pages/test/test.wxml-->
+<text>父组件中的num值：{{myNum}}</text>
+<!--使用组件-->
+<!--
+<newcom mydata="我是要传给自组件你的参数"></newcom>
+<newcom mydata="我是要传给自组件你的参数" my-num="{{myNum}}"></newcom>
+-->
+
+<!--使用插槽-->
+<newcom mydata="我是要传给自组件你的参数" my-num="{{myNum}}" bindmyevent="onMyEvent">
+  <view>我是父组件的slot内容</view>
+</newcom>

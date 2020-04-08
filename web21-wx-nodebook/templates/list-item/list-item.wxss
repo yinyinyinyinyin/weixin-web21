@@ -1,1 +1,11 @@
 /* pages/templates/list-item/list-item.wxss */
+
+.list-con{
+  padding:5px;
+  border-bottom:green 1px solid;
+}
+.list-time{
+  padding:5px;
+}
+.edit{position: absolute; top:0px; right:10px; height:56rpx;line-height:56rpx;}
+.del{position: absolute; bottom:0px; right:10px; height:56rpx;line-height:56rpx;}

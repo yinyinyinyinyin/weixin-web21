@@ -1,0 +1,9 @@
+<!--components/newcom/newcom.wxml-->
+<text>components/newcom/newcom.wxml</text>
+<view class="com_con">
+这是组件内部节点
+<slot></slot>
+</view>
+<view>{{mydata}}</view>
+<view>从父组件传过来的数值是：{{myNum}}</view>
+<button bindtap="changeNum" type="primary">点击按钮修改myNum的值，传递给父组件</button>
