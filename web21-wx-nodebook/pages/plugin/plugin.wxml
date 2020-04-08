@@ -1,0 +1,5 @@
+<!--pages/plugin/plugin.wxml-->
+<text>pages/plugin/plugin.wxml</text>
+<dimenshow width="auto" height="66%" autoplay="" view="360" src="{{picsWeblink}}">
+  <text style="font-size:15px;line-height:2;margin:6px 9px;display:block;">3D环物插件示例，左右拖动上面试试吧</text>
+</dimenshow>
