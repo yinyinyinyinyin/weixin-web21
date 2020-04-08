@@ -3,6 +3,8 @@
     <view wx:for="{{listArr}}" class="list-item" wx:key="id">
       <view class="list-con">{{item.content}}</view>
       <view class="list-time">创建时间：{{item.time}}</view>
+      <button type="primary" size="mini" class="edit" bindtap="edit">修改</button>
+      <button type="primary" size="mini" class="del" bindtap="del" data-id="{{item.id}}">删除</button>
     </view>
   </block>
   <view wx:else>记事本很纯洁，需要你点击添加按钮！</view>  

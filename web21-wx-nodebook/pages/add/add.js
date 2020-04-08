@@ -17,7 +17,8 @@ Page({
    */
   data: {
     content:'',
-    time:''
+    time:'',
+    id:0
   },
   //input框输入数据时需要触发的函数
   saveText:function(ev){
@@ -61,7 +62,10 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    //设置添加数据的id
+    this.setData({
+      id:new Date().getTime()  //将日期时间对象转时间戳
+    })
   },
 
   /**

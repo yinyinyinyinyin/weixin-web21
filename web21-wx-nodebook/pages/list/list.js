@@ -19,6 +19,28 @@ Page({
       url: '../add/add',
     })
   },
+  //删除
+  del:function(ev){
+    console.log(ev);
+    const id = ev.currentTarget.dataset.id;
+    const that = this;
+    //弹出模态框，是否确认删除
+    wx.showModal({
+      title: '确认删除',
+      content: '请确认是否要删除这条记录？',
+      success (res) {
+        if (res.confirm) {
+          console.log('用户点击确定');
+          //删除缓存中的相应数据，重新渲染页面
+          //console.log(this);
+          delValue(that,id);
+        } else if (res.cancel) {
+          console.log('用户点击取消')
+        }
+      }
+    })
+    
+  },
   toLog:function(){
     //switchTab就可以跳转到tabBar的页面
     wx.switchTab({
@@ -40,12 +62,6 @@ Page({
    // initValue(this);
   },
   /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-  /**
    * 生命周期函数--监听页面显示--可以执行多次的
    */
   onShow: function () {
@@ -59,6 +75,27 @@ function initValue(page){
   if(arr.length){
     page.setData({
       listArr:arr
+    })
+  }
+  console.log(page.data.listArr);
+}
+
+//删除缓存的相应记录
+function delValue(page,id){
+  //找到将要删除的记录，将其从缓存中剔除
+  var arr = wx.getStorageSync('note');
+  var data = [];
+  if(arr.length){
+    arr.forEach((item=>{
+      if(id !== item.id){//不是要删除的记录
+        data.push(item);
+      }
+    }))
+    //将data重新存入缓存
+    wx.setStorageSync('note', data);
+    //setData
+    page.setData({
+      listArr:data
     })
   }
 }
