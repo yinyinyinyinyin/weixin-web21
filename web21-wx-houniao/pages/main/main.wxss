@@ -2,9 +2,20 @@
 @import "/templates/mainswiper/mainswiper.wxss";
 .sousuo-btn{position: fixed; top:40rpx; left:40rpx;width: 100rpx; height: 100rpx;border-radius: 50%; background:rgba(242,242,242,.95);z-index:100; text-align: center; line-height:100rpx;color:#000;}
 .sousuo-btn .main-sousuo{font-size:30px;}
-.title-img{width: 100%; height:194rpx;}
+.title-img{width: 100%; height:194rpx; }
 .main-title{height:100rpx; line-height:100rpx; text-align: center; position: relative; border-top:20rpx solid #eee; border-bottom:2rpx solid #eee ;color:#858585;}
-.item { display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-around;margin:20rpx;  border-bottom:1px dotted #000;}
-.item .item_img{width:45%;}
+.item { display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-around;margin: 10rpx;padding-top:20rpx;  border-top:1px dashed #b9b9b9;
+height:172rpx;font-size:12px;
+}
+.item .item_title{font-size:14px;color:#000;margin-bottom:16rpx;}
+.item .item_dec{background: #e9e9e9; border-radius: 8rpx;display: inline; padding:6rpx;}
+.item .item_day{ margin-top:16px; color:#858585;}
+.item .item_day .shijian{font-size:10px;}
+.item .item_day .item-money{margin-left:100rpx;}
+.item:first-child{border-top:none;}
+.item .item_img{width:45%; position: relative;}
+.item .item_img text{position: absolute; bottom:20rpx; right:50rpx; color:#fff;font-size:12px;}
 .item .item_img image{width:293rpx; height:155.16rpx;}
 .item .item_text{width:55%;}
+image {display: block;}
+

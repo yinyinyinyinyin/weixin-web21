@@ -3,3 +3,12 @@
 <view>
   <image src="{{productObj.product_base_info.pro_pic_url}}"></image>
 </view>
+
+<view class="item_title {{itemType?'ac':''}}">
+  <view class="{{gaiyaoType?'active':''}}">行程概要</view>
+  <view class="{{xiangxiType?'active':''}}">详细行程</view>
+  <view class="{{jiageType?'active':''}}">价格说明</view>
+</view>
+<view class="gaiyao" id="gaiyao">行程概要内容</view>
+<view class="xiangxi" id="xiangxi">详细行程内容</view>
+<view class="jiage" id="jiage">价格说明内容</view>

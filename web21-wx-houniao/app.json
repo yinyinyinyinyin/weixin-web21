@@ -1,13 +1,11 @@
 {
   "pages": [
+    "pages/item/item",
     "pages/main/main",
     "pages/find/find",
     "pages/dingzhi/dingzhi",
     "pages/mudi/mudi",
-    "pages/me/me",
-    "templates/mainswiper/mainswiper",
-    "templates/maintuijian/maintuijian",
-    "pages/item/item"
+    "pages/me/me"
   ],
   "window": {
     "backgroundTextStyle": "light",

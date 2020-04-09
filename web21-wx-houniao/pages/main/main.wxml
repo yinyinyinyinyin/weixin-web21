@@ -9,13 +9,16 @@
     </view>
   <view class="list">
     <view class="item" wx:for="{{tuijianArr}}" wx:key="index" data-id="{{item.productId}}" bindtap="goitem">
-      <view class="item_img"> <image src="{{item.proPicUrl}}" ></image></view>
+      <view class="item_img"> 
+        <image src="{{item.proPicUrl}}" ></image>
+        <text class="iconfont icon-shoucang1">{{item.collectionNum}}</text>
+      </view>
       <view class="item_text">
-        <view>{{item.proTitle}}</view>
-        <view>{{item.country}}</view>
-        <view>
-          <text>{{routingDat}}天{{routingNigth}}晚</text>
-          <text>{{amount}}元起</text>
+        <view class="item_title">{{item.proTitle}}</view>
+        <view class="item_dec"><text class="iconfont icon-dingwei1"></text>{{item.country}}</view>
+        <view class="item_day">
+          <text><text class="iconfont icon-shijian1 shijian"></text> {{item.routingDat}}天{{item.routingNigth}}晚</text>
+          <text class="item-money"><text class="iconfont icon-RectangleCopy"></text> {{item.amount}}元起</text>
         </view>
       </view>
     </view>

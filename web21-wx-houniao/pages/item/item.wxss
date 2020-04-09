@@ -1,1 +1,8 @@
 /* pages/item/item.wxss */
+.item_title{display:none; width: 100%; flex-wrap: nowrap; flex-direction: row; justify-content: space-around; height: 100rpx; line-height: 100rpx; background:#fff;
+border-bottom:1px solid #445356; color:#cbcaca;}
+.active{font-weight: bold; border-bottom:4px solid #445356;color:#364244;}
+.ac{display:flex;position: fixed; top:0;}
+.gaiyao{height:400px; background:lightblue;}
+.xiangxi{height:500px; background:lightcoral;}
+.jiage{height:600px; background:lightgreen;}

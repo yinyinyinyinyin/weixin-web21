@@ -7,7 +7,14 @@ Page({
    */
   data: {
     id:"",//产品id
-    productObj:{}//产品数据
+    productObj:{},//产品数据
+    itemType:false,//title是否显示  false 不显示 ，true显示
+    gaiyaoType:false,//行程概要是否是点亮状态 false没点亮，true点亮了
+    xiangxiType:false,
+    jiageType:false,
+    gaiyaoTop:0,//行程概要内容里顶部的距离，默认值为0
+    xiangxiTop:0,
+    jiageTop:0
   },
 
   /**
@@ -15,7 +22,10 @@ Page({
    */
   onLoad: function (options) {
     console.log(options);
-    const id = options.id;
+    let id = options.id;
+    if(id == undefined){
+      id = '1fdab5ebeb9644359f296c9697aab32a';
+    }
     this.setData({
       id:id
     })
@@ -29,54 +39,31 @@ Page({
       })
     },'/product/product/getProductDetails/'+id);
 
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
+    //获取行程概要内容、详细行程内容、价格说明内容离顶部的距离
+    wx.createSelectorQuery().select('#gaiyao').boundingClientRect((rect)=>{
+      this.setData({gaiyaoTop:rect.top})
+    }).exec();
+    wx.createSelectorQuery().select('#xiangxi').boundingClientRect((rect)=>{
+      this.setData({xiangxiTop:rect.top})
+    }).exec();
+    wx.createSelectorQuery().select('#jiage').boundingClientRect((rect)=>{
+      this.setData({jiageTop:rect.top})
+    }).exec();
 
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  //滚动时触发的钩子函数
+  onPageScroll:function(res){
+    console.log("滚动触发了",res);
+    let scrollTop = res.scrollTop+50;
+    //res.scrollTop  滚动时离顶部的距离
+    if(scrollTop >= this.data.gaiyaoTop){
+      this.setData({
+        itemType:true,
+        gaiyaoType:true
+      })
+    }
   }
+  
+
+
 })
