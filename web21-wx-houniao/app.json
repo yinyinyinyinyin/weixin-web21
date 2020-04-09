@@ -1,8 +1,8 @@
 {
   "pages": [
+    "pages/find/find",
     "pages/item/item",
     "pages/main/main",
-    "pages/find/find",
     "pages/dingzhi/dingzhi",
     "pages/mudi/mudi",
     "pages/me/me"

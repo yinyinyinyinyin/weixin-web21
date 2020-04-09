@@ -1,1 +1,22 @@
 /* pages/find/find.wxss */
+page{background:#f2f2f2;}
+.find-search{height:100rpx; width: 100%; display: flex; flex-direction: row ; flex-wrap: nowrap; line-height:100rpx; justify-content: space-around;}
+.find-search .s-input{width: 60%; position: relative;}
+.find-search .s-input input{background:#fff; height:60rpx; border-radius: 40rpx;margin-top:20rpx; margin-left:30rpx;width:460rpx;padding-left:50rpx; }
+.find-search .s-input text{position: absolute; top:0rpx; left:43rpx;}
+.find-search .s-text{width:40%; text-align: center;}
+
+.s-title{display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-around; }
+.active{border-bottom:3px solid #445356;}
+.s-text-con{display: flex; justify-content: space-around;
+  background: #cbcaca;
+  font-size: 14px;
+  height:100rpx;
+  line-height: 100rpx;
+  color:#fff;
+  align-items: center;
+}
+.ac{ background:#878e90; border-radius: 4rpx; line-height: 34rpx; height:34rpx;padding:10rpx;}
+
+.country-con{display:flex; justify-content: space-around; flex-wrap: wrap;}
+.country-con .country-item{padding: 5rpx 16rpx; border:1px solid #cdcdcd; border-radius: 30rpx;margin:20rpx 10rpx; }

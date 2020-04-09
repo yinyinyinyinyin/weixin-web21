@@ -1,2 +1,31 @@
 <!--pages/find/find.wxml-->
-<text>pages/find/find.wxml</text>
+<view class="find-search">
+  <view class="s-input">
+    <text class="iconfont icon-sousuo1"></text>
+    <input type="text" placeholder="请输入您想去的国家和城市" />
+  </view>
+  <view class="s-text">搜索</view>
+</view>
+
+
+<view class="s-title">
+  <view bindtap="changeType" data-type="{{true}}" class="{{sType?'active':''}}">洲</view>
+  <view bindtap="changeType" data-type="{{false}}"  class="{{!sType?'active':''}}">季节</view>
+</view>
+
+<!--洲-->
+<view wx:if="{{sType}}">
+  <view class="s-text-con">
+    <view wx:for="{{continent}}" wx:key="index"
+    bindtap="changeCon" data-name="{{item}}"
+     class="{{item == defaultCon?'ac':''}}">{{item}}</view>
+  </view>
+  <view class="country-con">
+    <view class="country-item" wx:for="{{countryArr}}" wx:key="index">{{item.country}}</view>
+  </view>
+</view>
+
+<!--季节-->
+<view wx:else>
+季节
+</view>

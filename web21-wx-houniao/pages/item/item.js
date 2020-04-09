@@ -56,10 +56,28 @@ Page({
     console.log("滚动触发了",res);
     let scrollTop = res.scrollTop+50;
     //res.scrollTop  滚动时离顶部的距离
-    if(scrollTop >= this.data.gaiyaoTop){
+    if(scrollTop >= this.data.gaiyaoTop && scrollTop < this.data.xiangxiTop){
       this.setData({
         itemType:true,
-        gaiyaoType:true
+        gaiyaoType:true,
+        xiangxiType:false,
+        jiageType:false
+      })
+    }else if(scrollTop >=this.data.xiangxiTop && scrollTop < this.data.jiageTop){
+      this.setData({
+        gaiyaoType:false,
+        xiangxiType:true,
+        jiageType:false
+      })
+    }else if(scrollTop >= this.data.jiageTop ){
+      this.setData({
+        gaiyaoType:false,
+        xiangxiType:false,
+        jiageType:true
+      })
+    }else{
+      this.setData({
+        itemType:false
       })
     }
   }
