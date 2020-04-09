@@ -1,11 +1,14 @@
 <import src="/templates/mainswiper/mainswiper"  />
 <view>
-
-<template is="mainswiper" data="{{lunboArr}}"></template>
-  <view>推荐</view>
-  <text class='iconfont icon-diliweizhi'></text>
+  <view class="sousuo-btn"><text class="iconfont icon-sousuo1 main-sousuo"></text></view>
+  <template is="mainswiper" data="{{lunboArr}}"></template>
+  <view><image src="/images/title-img.png" class="title-img"></image></view>
+  <view class="main-title">
+    推荐
+    <text class="iconfont icon-LC_icon_down_line_circle main-down"></text>
+    </view>
   <view class="list">
-    <view class="item" wx:for="{{tuijianArr}}" wx:key="index">
+    <view class="item" wx:for="{{tuijianArr}}" wx:key="index" data-id="{{item.productId}}" bindtap="goitem">
       <view class="item_img"> <image src="{{item.proPicUrl}}" ></image></view>
       <view class="item_text">
         <view>{{item.proTitle}}</view>

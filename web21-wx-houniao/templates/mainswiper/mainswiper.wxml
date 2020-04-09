@@ -1,5 +1,4 @@
 <!--templates/mainswiper/mainswiper.wxml-->
-<text>templates/mainswiper/mainswiper.wxml</text>
 <template name="mainswiper">
   
  <swiper indicator-dots="{{true}}"

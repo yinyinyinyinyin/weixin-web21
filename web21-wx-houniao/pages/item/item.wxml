@@ -1,0 +1,5 @@
+<!--pages/item/item.wxml-->
+<text>pages/item/item.wxml</text>
+<view>
+  <image src="{{productObj.product_base_info.pro_pic_url}}"></image>
+</view>

@@ -5,12 +5,14 @@
     "pages/dingzhi/dingzhi",
     "pages/mudi/mudi",
     "pages/me/me",
-    "templates/mainswiper/mainswiper"
+    "templates/mainswiper/mainswiper",
+    "templates/maintuijian/maintuijian",
+    "pages/item/item"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "候鸟旅行|省心定制，品...",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
