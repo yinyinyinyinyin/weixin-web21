@@ -2,9 +2,9 @@
 <view class="find-search">
   <view class="s-input">
     <text class="iconfont icon-sousuo1"></text>
-    <input type="text" placeholder="请输入您想去的国家和城市" />
+    <input type="text" placeholder="请输入您想去的国家和城市" bindinput="changeSearchText"/>
   </view>
-  <view class="s-text">搜索</view>
+  <view class="s-text" bindtap="goList">搜索</view>
 </view>
 
 

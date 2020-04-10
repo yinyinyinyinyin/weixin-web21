@@ -23,7 +23,7 @@ Page({
   onLoad: function (options) {
     console.log(options);
     let id = options.id;
-    if(id == undefined){
+    if(id == ""){
       id = '1fdab5ebeb9644359f296c9697aab32a';
     }
     this.setData({

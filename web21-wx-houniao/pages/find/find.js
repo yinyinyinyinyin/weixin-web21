@@ -9,8 +9,21 @@ Page({
     sType:true,//洲和季节的显示状态
     continent:["欧洲","亚洲","非洲","北美洲","南美洲","大洋洲"],//洲
     countryArr:[],//保存洲下面的国家
-    defaultCon:'欧洲'
-
+    defaultCon:'欧洲',
+    searchText:''//搜索的关键字
+  },
+  //保存搜索的关键字
+  changeSearchText:function(ev){
+    console.log(ev);
+    this.setData({
+      searchText:ev.detail.value
+    })
+  },
+  //跳转到搜索列表页
+  goList:function(){
+    wx.navigateTo({
+      url: '/pages/list/list?searchText='+this.data.searchText
+    })
   },
   //切换洲和季节
   changeType:function(ev){

@@ -1,11 +1,13 @@
 {
   "pages": [
+    "pages/list/list",
     "pages/find/find",
     "pages/item/item",
     "pages/main/main",
     "pages/dingzhi/dingzhi",
     "pages/mudi/mudi",
     "pages/me/me"
+   
   ],
   "window": {
     "backgroundTextStyle": "light",

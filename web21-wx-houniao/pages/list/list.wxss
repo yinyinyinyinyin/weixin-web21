@@ -1,0 +1,8 @@
+/* pages/list/list.wxss */
+page{background: #f2f2f2;}
+.list-con{margin:20rpx;}
+.list-con .list-item {margin-bottom:40rpx;}
+.list-con .list-item image{width:100%; height:372rpx;}
+.list-title{color:#919292; text-align:center;margin-top:10rpx;margin-bottom:10rpx;}
+.list-text{color:#ccc;font-size:12px; text-align:center;}
+.shijian,.xin,.weizhi{font-size:10px;}

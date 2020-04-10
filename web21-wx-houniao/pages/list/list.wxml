@@ -1,0 +1,13 @@
+<!--pages/list/list.wxml-->
+<view class="list-con">
+  <view class="list-item" wx:for="{{dingzhiArr}}" wx:key="index">
+    <image src="{{item.pro_pic_url}}"></image>
+    <view class="list-title">{{item.pro_title}}</view>
+    <view class="list-text">
+      <text><text class="iconfont icon-diliweizhi weizhi"></text> {{item.country}}</text> | 
+      <text><text class="iconfont icon-shijian1 shijian"></text> {{item.routing_data}}天{{item.routing_nigth}}晚</text> | 
+      <text><text class="iconfont icon-03 xin"></text> {{item.collection_num == null?0:item.collection_num}}</text>
+    </view>
+  </view>
+  <view wx:if="{{endType}}">已经到底了，不要再拉了...</view>
+</view>
