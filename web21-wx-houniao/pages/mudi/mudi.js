@@ -5,7 +5,18 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    zhouArr:[
+      {"id":1,"name":"欧洲","key":"Europe"},
+      {"id":2,"name":"亚洲","key":"Asia"},
+      {"id":3,"name":"非洲","key":"Africa"},
+      {"id":4,"name":"大洋洲","key":"Oceania"},
+      {"id":5,"name":"南美洲","key":"NorthAmerica"},
+      {"id":6,"name":"北美洲","key":"SouthAmerica"},
+    ],
+    defaultZhou:1,
+    zhouName:'欧洲',
+    zhouKey:'Europe',
+    zhouDataArr:[]//不同的洲下面的数据
   },
 
   /**

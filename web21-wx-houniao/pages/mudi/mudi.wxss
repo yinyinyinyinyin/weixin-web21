@@ -1,1 +1,55 @@
 /* pages/mudi/mudi.wxss */
+.map_container{
+  border-bottom:10px solid #bdc2c3;
+}
+.map_list{   
+  height: 421.88rpx;
+  width: 684.38rpx;
+  position: relative;
+  margin: 23.438rpx 32.812rpx ;
+ /*background: lightblue;*/
+}
+.Europe{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 375rpx;
+  height:206.26rpx;
+  background: url(https://www.51houniao.com/wx/customer/classic/lib/images/ouzhou.png) center center no-repeat;
+  background-size:375rpx;
+  background-position: 0 -213.282rpx;
+}
+
+.Europe_1{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 375rpx;
+  height:206.26rpx;
+  background: url(https://www.51houniao.com/wx/customer/classic/lib/images/ouzhou.png) center center no-repeat;
+  background-size:375rpx;
+  background-position: 0 0rpx;
+}
+.Africa{
+  position: absolute;
+  left:-18.75rpx;
+  top:168.75rpx;
+  width: 152.3438rpx;
+  height:164.0626rpx;
+  background: url(https://www.51houniao.com/wx/customer/classic/lib/images/feizhou.png) center center no-repeat;
+  background-size:152.3438rpx;
+  background-position: 0 -168.75rpx;
+  z-index:7;
+}
+
+.Africa_1{
+  position: absolute;
+  left:-18.75rpx;
+  top:168.75rpx;
+  width: 152.3438rpx;
+  height:164.0626rpx;
+  background: url(https://www.51houniao.com/wx/customer/classic/lib/images/feizhou.png) center center no-repeat;
+  background-size:152.3438rpx;
+  background-position: 0 0rpx;
+  z-index:7
+}

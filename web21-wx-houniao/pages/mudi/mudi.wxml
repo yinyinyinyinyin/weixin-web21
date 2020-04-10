@@ -1,2 +1,11 @@
 <!--pages/mudi/mudi.wxml-->
-<text>pages/mudi/mudi.wxml</text>
+<view class="map_container">
+  <view class="map_list">
+  {{}}
+   
+    <view wx:for="{{zhouArr}}" wx:key="index" class="{{defaultZhou == item.id?item.key+'_1':item.key}}">
+    {{item.name}}
+    </view>
+
+  </view>
+</view>
