@@ -12,3 +12,30 @@
 <view class="gaiyao" id="gaiyao">行程概要内容</view>
 <view class="xiangxi" id="xiangxi">详细行程内容</view>
 <view class="jiage" id="jiage">价格说明内容</view>
+
+<view class="rightbtn">
+  <view class="home" bindtap="goHome">
+    <text class="iconfont icon-icon_home"></text>
+  </view>
+  
+  <view class="fenxiang" bindtap="fenxiang">
+     <button open-type="share"></button>
+    <text class="iconfont icon-weixin">  
+    </text>
+  </view>
+</view>
+
+<view class="bottombtn">
+  <view class="b-left-btn">
+    <view class="phone" bindtap="bodadianhua">
+      <view> <text class="iconfont icon-dianhua"></text></view>
+      <view>电话</view>
+    </view>
+    <view class="kefu">
+      <button class="kefu-btn" open-type="contact" bindcontact="handleContact"></button>
+     <view><text class="iconfont icon-lianxikefu"></text></view>
+      <view>客服</view>
+    </view>
+  </view>
+  <view class="b-right-btn">立即定制</view>  
+</view>

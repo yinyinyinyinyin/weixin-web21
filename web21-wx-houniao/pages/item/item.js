@@ -16,6 +16,23 @@ Page({
     xiangxiTop:0,
     jiageTop:0
   },
+  //拨打电话的功能
+  bodadianhua:function(){
+    wx.makePhoneCall({
+      phoneNumber: '4008810706',
+    })
+  },
+  //客服功能需要 后台配置，然后才能使用
+  handleContact (e) {
+      console.log(e.detail.path)
+      console.log(e.detail.query)
+  },
+  //点击跳转到首页
+  goHome:function(){
+    wx.switchTab({
+      url: '/pages/main/main',
+    })
+  },
 
   /**
    * 生命周期函数--监听页面加载
@@ -23,7 +40,7 @@ Page({
   onLoad: function (options) {
     console.log(options);
     let id = options.id;
-    if(id == ""){
+    if(id == undefined){
       id = '1fdab5ebeb9644359f296c9697aab32a';
     }
     this.setData({
@@ -37,9 +54,8 @@ Page({
       _this.setData({
         productObj:res.data
       })
-    },'/product/product/getProductDetails/'+id);
 
-    //获取行程概要内容、详细行程内容、价格说明内容离顶部的距离
+      //获取行程概要内容、详细行程内容、价格说明内容离顶部的距离
     wx.createSelectorQuery().select('#gaiyao').boundingClientRect((rect)=>{
       this.setData({gaiyaoTop:rect.top})
     }).exec();
@@ -49,6 +65,12 @@ Page({
     wx.createSelectorQuery().select('#jiage').boundingClientRect((rect)=>{
       this.setData({jiageTop:rect.top})
     }).exec();
+
+
+
+    },'/product/product/getProductDetails/'+id);
+
+    
 
   },
   //滚动时触发的钩子函数

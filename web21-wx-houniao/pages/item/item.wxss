@@ -6,3 +6,82 @@ border-bottom:1px solid #445356; color:#cbcaca;}
 .gaiyao{height:400px; background:lightblue;}
 .xiangxi{height:500px; background:lightcoral;}
 .jiage{height:600px; background:lightgreen;}
+.rightbtn{
+  position: fixed;
+  right:10rpx;
+  bottom:100rpx;
+  width: 100rpx;
+  height: 220rpx;
+
+}
+.home,.fenxiang{
+  color:#fff;
+  width: 100rpx;
+  height:100rpx;
+  border-radius: 50%;
+  background:rgba(0,0,0,.2);
+  margin-bottom:20rpx;
+  text-align:center;
+  line-height:100rpx;
+}
+.home text,.fenxiang text{
+  font-size:30px;
+}
+.fenxiang {
+  position: relative;
+}
+.fenxiang button{
+  position:absolute;
+  width:100rpx;
+  height:100rpx;
+  background:rgba(0,0,0,0);
+  border-radius: 50%;
+}
+.bottombtn{
+  position: fixed;
+  width: 100%;
+  height:100rpx;
+  display: flex;
+  bottom:0;
+  left:0;
+  right:0;
+  justify-content: space-between;
+  background:#fff;
+}
+.bottombtn .b-left-btn{
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  color:#888;
+}
+.bottombtn .b-left-btn .phone{
+  width: 100rpx;
+  border-right:1px solid #ccc;
+}
+.bottombtn .b-left-btn .kefu{
+  width: 100rpx;
+  border-right:1px solid #ccc;
+  position: relative;
+}
+
+.bottombtn .b-left-btn .kefu .kefu-btn{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100rpx;
+  height:100rpx;
+  background:rgba(0,0,0,0);
+ 
+
+}
+
+.phone view,.kefu view{text-align: center;}
+.phone view text,.kefu view text{font-size:20px;}
+.bottombtn .b-right-btn{
+  width: 140px;
+  height:100rpx;
+  line-height:100rpx;
+  text-align:center;
+  color:#fff;
+  background:orangered;
+}

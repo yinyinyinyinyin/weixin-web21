@@ -1,9 +1,10 @@
 {
   "pages": [
+    "pages/item/item",
     "pages/mudi/mudi",
     "pages/list/list",
     "pages/find/find",
-    "pages/item/item",
+    
     "pages/main/main",
     "pages/dingzhi/dingzhi",
     "pages/me/me"
