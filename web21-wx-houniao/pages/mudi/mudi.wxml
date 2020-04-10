@@ -1,11 +1,33 @@
 <!--pages/mudi/mudi.wxml-->
 <view class="map_container">
   <view class="map_list">
-  {{}}
-   
-    <view wx:for="{{zhouArr}}" wx:key="index" class="{{defaultZhou == item.id?item.key+'_1':item.key}}">
+    <view wx:for="{{zhouArr}}" wx:key="index" class="{{item.key}} {{defaultZhou == item.id?'active':''}}" bindtap="changeZhou" data-id="{{item.id}}" data-key="{{item.key}}" data-name="{{item.name}}">
     {{item.name}}
     </view>
-
   </view>
+</view>
+
+
+<!--热门目的地-->
+<view class="remen-container">
+  <view class="remen-title">{{zhouName}}热门目的地</view>
+  <view class="remen-list">
+    <view wx:for="{{remenArr}}" wx:key="index">
+      <image src="{{item.country_pic_url}}"></image>
+      <text>{{item.country}} {{item.country_en}}</text>
+    </view>
+  </view>
+
+</view>
+
+<!--其他目的地-->
+
+<view class="qita-container">
+  <view class="qita-title">{{zhouName}}其他目的地</view>
+  <view class="qita-list">
+    <view wx:for="{{qitaArr}}" wx:key="index">
+      <text>{{item.country}} {{item.country_en}}</text>
+    </view>
+  </view>
+
 </view>

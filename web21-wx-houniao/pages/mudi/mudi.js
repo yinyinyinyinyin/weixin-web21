@@ -1,4 +1,5 @@
 // pages/mudi/mudi.js
+let fetch = require('../../utils/getdata.js');
 Page({
 
   /**
@@ -10,20 +11,42 @@ Page({
       {"id":2,"name":"亚洲","key":"Asia"},
       {"id":3,"name":"非洲","key":"Africa"},
       {"id":4,"name":"大洋洲","key":"Oceania"},
-      {"id":5,"name":"南美洲","key":"NorthAmerica"},
-      {"id":6,"name":"北美洲","key":"SouthAmerica"},
+      {"id":5,"name":"南美洲","key":"SouthAmerica"},
+      {"id":6,"name":"北美洲","key":"NorthAmerica"},  
     ],
     defaultZhou:1,
     zhouName:'欧洲',
     zhouKey:'Europe',
-    zhouDataArr:[]//不同的洲下面的数据
+    remenArr:[],//热门数据
+    qitaArr:[]//其他
+  },
+  //切换洲
+  changeZhou:function(ev){
+    console.log(ev);
+    this.setData({
+      defaultZhou:ev.currentTarget.dataset.id,
+      zhouName:ev.currentTarget.dataset.name,
+      zhouKey:ev.currentTarget.dataset.key
+    })
+    this.getZhoudata();
   },
 
+  getZhoudata:function(){
+    fetch.pagedata.get((type,res)=>{
+      console.log(res);
+      if(type == 'success'){
+          this.setData({
+            remenArr:res.data.hot_country_list,
+            qitaArr:res.data.other_country_list
+          })
+      }
+    },'/product/desc/CountryList/'+this.data.zhouName+'/'+this.data.zhouKey);
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.getZhoudata();
   },
 
   /**

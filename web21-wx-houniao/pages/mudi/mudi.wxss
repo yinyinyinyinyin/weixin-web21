@@ -10,46 +10,85 @@
  /*background: lightblue;*/
 }
 .Europe{
-  position: absolute;
-  left: 0;
-  top: 0;
   width: 375rpx;
-  height:206.26rpx;
-  background: url(https://www.51houniao.com/wx/customer/classic/lib/images/ouzhou.png) center center no-repeat;
-  background-size:375rpx;
-  background-position: 0 -213.282rpx;
-}
-
-.Europe_1{
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 375rpx;
-  height:206.26rpx;
-  background: url(https://www.51houniao.com/wx/customer/classic/lib/images/ouzhou.png) center center no-repeat;
-  background-size:375rpx;
-  background-position: 0 0rpx;
+    height: 126.26rpx;
+    background: url(https://www.51houniao.com/wx/customer/classic/lib/images/ouzhou.png) center center no-repeat;
+    background-size:375rpx;
+    background-position: 0 -213rpx;
+    position: absolute;
+    left:0;
+    top:0;
+    z-index:6;
+    text-align:center;
+    padding-top:80rpx;
 }
 .Africa{
   position: absolute;
   left:-18.75rpx;
   top:168.75rpx;
-  width: 152.3438rpx;
-  height:164.0626rpx;
+  width: 152.34rpx;
+  height: 135.06rpx;
   background: url(https://www.51houniao.com/wx/customer/classic/lib/images/feizhou.png) center center no-repeat;
   background-size:152.3438rpx;
   background-position: 0 -168.75rpx;
   z-index:7;
+  text-align:center;
+  padding-top:29rpx;
 }
 
-.Africa_1{
-  position: absolute;
-  left:-18.75rpx;
-  top:168.75rpx;
-  width: 152.3438rpx;
-  height:164.0626rpx;
-  background: url(https://www.51houniao.com/wx/customer/classic/lib/images/feizhou.png) center center no-repeat;
-  background-size:152.3438rpx;
-  background-position: 0 0rpx;
-  z-index:7
+.Asia{
+  width: 187.5rpx;
+  height: 117.38rpx;
+  background: url(https://www.51houniao.com/wx/customer/classic/lib/images/yazhou.png) center center no-repeat;
+ background-size: 187.5rpx;
+  background-position: 0 -159.375rpx;
+  position:absolute;
+  z-index: 8;
+  left: 121.875rpx;
+  top: 121.875rpx;
+  text-align:center;
+  padding-top:42rpx;
+}
+.Oceania{
+  width: 102.5rpx;
+    height: 77.75rpx;
+    background: url(https://www.51houniao.com/wx/customer/classic/lib/images/dayangzhou.png) center center no-repeat;
+    background-size: 112.5rpx;
+    background-position: 0 -103.125rpx;
+    position:absolute;
+    z-index: 11;
+    left: 229.6875rpx;
+    top: 285.9375rpx;
+    padding-top:16rpx;
+    padding-right:10rpx;
+}
+.NorthAmerica{
+  width: 88.06rpx; 
+    height: 149.68rpx;
+    background: url(https://www.51houniao.com/wx/customer/classic/lib/images/nanmei.png) center center no-repeat;
+   background-size: 164.0625rpx;
+    background-position: 0 -225rpx;
+    position:absolute;
+    z-index: 10;
+    left: 482.8125rpx;
+    top: 189.84375rpx;
+    padding-top:80rpx;
+    padding-left:76rpx;
+}
+.SouthAmerica{
+  width: 239.68rpx;
+    height: 148.44rpx;
+    background: url(https://www.51houniao.com/wx/customer/classic/lib/images/beimei.png) center center no-repeat;
+    background-size: 304.68rpx;
+    background-position: 0 -243rpx;
+    position:absolute;
+    left: 375rpx;
+    top: -23.4375rpx;
+    z-index:9;
+    padding-top:100rpx;
+    padding-left:65rpx;
+}
+
+.active{
+  background-position: 0 0 ;
 }
