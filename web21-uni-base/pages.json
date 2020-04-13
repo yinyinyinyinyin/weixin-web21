@@ -23,6 +23,12 @@
 			"style": {
 				"navigationBarTitleText": "我的"
 			}
+		},
+		{
+			"path": "pages/item/index",
+			"style": {
+				"navigationBarTitleText": "内容"
+			}
 		}
 	],
 	"globalStyle": {

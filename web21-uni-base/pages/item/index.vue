@@ -1,6 +1,6 @@
 <template>
 	<view class="content">
-		消息页面
+		item页面
 	</view>
 </template>
 
@@ -11,8 +11,8 @@
 				title: 'Hello'
 			}
 		},
-		onLoad() {
-
+		onLoad(options) {
+			console.log(options);
 		},
 		methods: {
 
