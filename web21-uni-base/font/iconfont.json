@@ -1,0 +1,37 @@
+{
+  "id": "1753204",
+  "name": "jiajianhao",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "397719",
+      "name": "喜欢，收藏",
+      "font_class": "shoucang",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "1207890",
+      "name": "时间",
+      "font_class": "shijian",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "1460398",
+      "name": "联系客服",
+      "font_class": "lianxikefu",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    },
+    {
+      "icon_id": "5756002",
+      "name": "分享",
+      "font_class": "fenxiang",
+      "unicode": "e623",
+      "unicode_decimal": 58915
+    }
+  ]
+}

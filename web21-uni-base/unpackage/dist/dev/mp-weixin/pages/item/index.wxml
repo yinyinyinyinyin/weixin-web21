@@ -1,0 +1,1 @@
+<view class="content">item页面<view class="uni-list"><view class="uni-list-cell"><block wx:for="{{10}}" wx:for-item="item" wx:for-index="index" wx:key="index"><view class="uni-list-cell-navigate uni-navigate-right">{{''+item+''}}</view></block></view></view></view>

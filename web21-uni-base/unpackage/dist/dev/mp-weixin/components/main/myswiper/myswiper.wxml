@@ -1,0 +1,1 @@
+<view><swiper class="swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}"><block wx:for="{{swiperArr}}" wx:for-item="item" wx:for-index="index" wx:key="index"><swiper-item><view class="swiper-item uni-bg-red"><image src="{{item.adlist_img}}"></image></view></swiper-item></block></swiper></view>
