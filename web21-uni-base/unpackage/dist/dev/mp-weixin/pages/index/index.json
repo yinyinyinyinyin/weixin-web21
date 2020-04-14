@@ -1,4 +1,6 @@
 {
-  "navigationBarTitleText": "uni-app",
-  "usingComponents": {}
+  "navigationBarTitleText": "加减号",
+  "usingComponents": {
+    "myswiper": "/components/main/myswiper/myswiper"
+  }
 }

@@ -13,6 +13,11 @@
 		<view v-for="(item,index) in CourseforYou" :key="index" class="list">
 			<image :src="item.pro_img[0].url" ></image>
 		</view>
+		<!-- #ifdef H5-->
+		<view class="test">
+			<text class="iconfont icon-shijian myicon"></text>
+		</view>
+		<!-- #endif-->
 	</view>
 </template>
 
@@ -63,6 +68,7 @@
 					url:'../item/index?classurl='+CategoryMemo+'&name='+CategoryName
 				})
 			}
+			
 		},
 		components:{//注册
 			myswiper
@@ -70,10 +76,14 @@
 	}
 </script>
 
-<style>
+<style lang="scss">
 	.icon-list{display: flex; justify-content: space-around; flex-wrap: wrap; border-top:#f5f5f5 solid 10px;
 	border-bottom:#f5f5f5 solid 10px;}
 	.icon-item{margin:32rpx; font-size:12px;}
 	.icon-item view{text-align: center;}
 	.icon-item image{ width:80rpx; height:80rpx; }
+	
+	.test{
+		.myicon{font-size: 30px; color:blue;}
+	}
 </style>

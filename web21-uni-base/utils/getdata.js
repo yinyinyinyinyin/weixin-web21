@@ -7,6 +7,7 @@ const pagedata = {
 		});
 		uni.request({
 			url:apiurl+url,
+			method:'GET',
 			header: {
 				'content-type': 'application/json' // 默认值
 			},
@@ -27,8 +28,9 @@ const pagedata = {
 		uni.request({
 			url:apiurl+url,
 			data:data,
+			method:'POST',
 			header: {
-				'content-type': 'application/json' // 默认值
+				'content-type': 'application/x-www-form-urlencoded;charset=UTF-8' // 默认值
 			},
 			success:function(res){
 				uni.hideLoading();
